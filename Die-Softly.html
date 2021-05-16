@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--this tag is an attribute to identify the website's language -  this helps search engines to return specific language results. In this case I have used "en" as in "English". I would like Google, for example, to show this website to mainly english speakers-->
+<html lang="en">
+
+<head>
+
+<!--this tag refers to the character encoding - how a browser will display the web page correctly-->
+<meta charset="UTF-8">
+
+<!-- load css file -->
+<link href="main.css" rel="stylesheet" type="text/css">
+
+<!-- load Font -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<!-- Load icon library for the search button in breadcrumb -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- load SlickNav -->
+<link rel="stylesheet" href="styles/slicknav.css">
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js">
+</script>
+
+<script src="js/jquery.slicknav.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+});
+</script>
+
+<!-- load Slideshow JavaScript -->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="slide_show.js"></script>
+
+<title>Gulden's Blog</title>
+
+<!-- SEO - search engine optimization -->
+<meta name="description" content="A student blog about University and mostly book reviews">
+<meta name="keywords" content="gulden,
+student, blog, bookreviews, reflectivepages">
+
+</head>
+
+
+<body>
+
+<!--The header of the website - this may contain a logo, a title (usually larger than normal text, to draw attention) or both-->
+<header>
+	<h1>Gulden's Blog</h1>
+</header>
+
+
+<!--This is the Navigation Bar on top of my website, after the Title-->
+
+<div class="navbar">
+	<nav id="mobilemenu"></nav>
+		<a href="index.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Reflective Pages<em class="fa fa-caret-down"></em></button>
+					<div class="dropdown-content">
+						<a href="module1.html">Module 1</a>
+				<a href="module2.html">Module 2</a>
+				<a href="module3.html">Module 3</a>
+				<a href="module4.html">Module 4</a>
+				<a href="module5.html">Module 5</a>
+				<a href="module6.html">Module 6</a>
+					</div>
+			</div>
+
+		<a href="bookReviews.html">Book Reviews</a>
+		<a href="aboutMe.html">About Me</a>
+		<a href="Contact.html">Contact</a>
+</div>
+
+
+	<ul class="breadcrumb">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="bookreviews.html">Book Reviews</a></li>
+			<li>Die Softly - Christopher Pike</li>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search..." name="search">
+							<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+	</ul>
+
+
+<!--The main content of the website, included in "section". Titles of "posts" will appear here, redirecting to a new tab on the browser-->
+<section>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>DIE SOFTLY - CHRISTOPHER PIKE</h2>
+					<h5><a href="bookReviews.html">Book Reviews </a> ;   13th of June, 2019</h5>
+						<img src="images/die-softly.jpg" alt="Avatar">
+							<p>
+							It's not often you get a creeper as the MC whose eyes you read through. But even despite the fact that this guy rigged up a camera to take pictures of his naked classmates, Pike wrote it in such a way that Herb was still an appealing guy. I didn't get skeeved out at all while reading. In fact, I empathized with Herb a little. He was just setting himself up for a stupid prank but he ended up getting handed a lot more.
+
+								Pike has an excellent way of teetering guilt from one character to another. You can't tell who's lying, who's being genuine or who has some tracks to cover. Everyone (except Herb) looks guilty. I just love how it's all woven together so seamlessly. Until it was made obvious who the culprit was, I was constantly trying to figure out who was the big bad in this story. And why. Now I'm not the best at these kinds of whodunnit type of stories but I'm able to connect the dots decently enough. But Pike's dots were masterfully all over the place in a kind of organized chaos. I truly think that the truth is hidden so well that not too many people would be able to figure it out until close to the reveal.
+
+								The only thing I'd change would be the villain dialogue at the end. It's kind of classic in a cliche sort of way how the villain ultimately suffers from verbal diarrhea and just can't shut their damn mouths, destroy evidence and be done with it. It was a definite unload that I think could have been better worked into the plot but I'm over it. I liked the rest of it too much.
+
+								Pike did a great job of keeping all of the characters (except Herb) at arm's length. Each had something about them that I could empathize or sympathize with but each had a motive, just a little hint of guilt that kept me from getting them too close. I had no idea who I could trust. That feeling of unease that Pike created isn't found often, I don't think, and it really made me uncomfortable at times. As do all good creepy thriller books. And don't go in expecting a cookie cutter ending either. Pike is fearless with his characters. No one is safe and he sticks to that.
+
+								While it didn't have anything paranormal in it, it still rates pretty high on the creep scale. Good horror doesn't need paranormal elements in it to make it horror. Just amazing writing that makes you uncomfortable and some level of afraid. Die Softly did just that.</p>
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+<!--Side section of my the website - a little box showing a short explanation about me and a Slideshow-->
+<aside>
+	<p>	
+		<br>
+			<img src="images/gulden1.png" alt="Avatar">
+	</p>
+		<h2><i>About Me</i></h2>
+			<p>I am Gulden, 25 years old. Currently a student at University of West London on Saturdays and during the week I am a nanny to a 8 year old boy. 
+This is my personal space: I will talk about my University days, modules, assessments and also discuss about one of my biggest passions: reading books. Not every book, though. I am a hardcore fan of Christopher Pike, a bestselling author of young adult fiction/horror books.<br> I also like pink things, traveling, drawing, video-games, movies and TV Shows!
+			</p>
+		
+	<h2>Best of Pike Book Covers</h2>
+		<h1 id="caption">The Starlight Crystal</h1>
+			<img id="slide" src="images/thestarlightCrystal.jpg" alt="The Starlight Crystal">
+				<div id="slides"> 
+					<img src="images/thestarlightCrystal.jpg" alt="The Starlight Crystal">
+					<img src="images/execofInnocence.jpg" alt="Execution of Innocence">
+					<img src="images/magicFire.jpg" alt="Magic Fire">
+					<img src="images/rememberMe.jpg" alt="Remember Me">
+				</div>
+		
+</aside>
+
+
+<!--This is the footer, containing name, surname, student number and University name of the student attending the module-->
+<footer>
+	
+	<div class="floatleft">
+		<p>
+			<img src="images/cat.gif" alt="Cat">
+				<br>
+					&copy; 2019, Gulden Belli
+		</p>
+	</div>
+
+</footer>
+
+
+</body>
+
+</html>

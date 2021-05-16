@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--this tag is an attribute to identify the website's language -  this helps search engines to return specific language results. In this case I have used "en" as in "English". I would like Google, for example, to show this website to mainly english speakers-->
+<html lang="en">
+
+<head>
+
+<!--this tag refers to the character encoding - how a browser will display the web page correctly-->
+<meta charset="UTF-8">
+
+<!-- load css file -->
+<link href="main.css" rel="stylesheet" type="text/css">
+
+<!-- load Font -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<!-- Load icon library for the search button in breadcrumb -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- load SlickNav -->
+<link rel="stylesheet" href="styles/slicknav.css">
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js">
+</script>
+
+<script src="js/jquery.slicknav.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+});
+</script>
+
+<!-- load Slideshow JavaScript -->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="slide_show.js"></script>
+	
+<title>Gulden's Blog</title>
+
+<!-- SEO - search engine optimization -->
+<meta name="description" content="A student blog about University and mostly book reviews">
+<meta name="keywords" content="gulden,
+student, blog, bookreviews, reflectivepages">
+
+</head>
+
+
+<body>
+
+<!--The header of the website - this may contain a logo, a title (usually larger than normal text, to draw attention) or both-->
+<header>
+	<h1>Gulden's Blog</h1>
+</header>
+
+
+<!--This is the Navigation Bar on top of my website, after the Title-->
+
+<div class="navbar">
+	<nav id="mobilemenu"></nav>
+		<a href="index.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Reflective Pages<em class="fa fa-caret-down"></em></button>
+					<div class="dropdown-content">
+						<a href="module1.html">Module 1</a>
+				<a href="module2.html">Module 2</a>
+				<a href="module3.html">Module 3</a>
+				<a href="module4.html">Module 4</a>
+				<a href="module5.html">Module 5</a>
+				<a href="module6.html">Module 6</a>
+					</div>
+			</div>
+
+		<a href="bookReviews.html">Book Reviews</a>
+		<a href="aboutMe.html">About Me</a>
+		<a href="Contact.html">Contact</a>
+</div>
+
+
+	<ul class="breadcrumb">
+		<li><a href="index.html">Home</a></li>
+			<li>Module 1</li>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search..." name="search">
+							<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+	</ul>
+
+
+<!--The main content of the website, included in "section". Titles of "posts" will appear here, redirecting to a new tab on the browser-->
+<section>
+	<h1>Reflective Pages: Module 1</h1>
+        <p>First module: Programming.</p>
+        <p class="indent">Module Tutor: Fehmida Mohamedali</p>
+        <p class="indent">Programming was an interesting module and it taught me a new language. My experience was highly positive and professor Fehmida Mohamedali was more than capable in teaching us. </p>
+		<p>Assessments were not easy but challenging. I liked that about this module. It gave me the chance to develop my java programming skills as I started with zero knowledge and now I know a whole new language. <br>
+		I have finished the course with a 85.50% total grade. I believe I was very successful, overall. This module was fun and interactive. </p>
+
+</section>	
+
+
+<!--Side section of my the website - a little box showing a short explanation about me and a Slideshow-->
+<aside>
+	<p>	
+		<br>
+			<img src="images/gulden1.png" alt="Avatar">
+	</p>
+		<h2><i>About Me</i></h2>
+			<p>I am Gulden, 25 years old. Currently a student at University of West London on Saturdays and during the week I am a nanny to a 8 year old boy. 
+This is my personal space: I will talk about my University days, modules, assessments and also discuss about one of my biggest passions: reading books. Not every book, though. I am a hardcore fan of Christopher Pike, a bestselling author of young adult fiction/horror books.<br> I also like pink things, traveling, drawing, video-games, movies and TV Shows!
+			</p>
+		
+	<h2>Best of Pike Book Covers</h2>
+		<h1 id="caption">The Starlight Crystal</h1>
+			<img id="slide" src="images/thestarlightCrystal.jpg" alt="The Starlight Crystal">
+				<div id="slides"> 
+					<img src="images/thestarlightCrystal.jpg" alt="The Starlight Crystal">
+					<img src="images/execofInnocence.jpg" alt="Execution of Innocence">
+					<img src="images/magicFire.jpg" alt="Magic Fire">
+					<img src="images/rememberMe.jpg" alt="Remember Me">
+				</div>
+		
+</aside>
+
+
+<!--This is the footer, containing name, surname, student number and University name of the student attending the module-->
+<footer>
+	
+	<div class="floatleft">
+		<p>
+			<img src="images/cat.gif" alt="Cat">
+				<br>
+					&copy; 2019, Gulden Belli
+		</p>
+	</div>
+
+</footer>
+
+
+</body>
+
+</html>

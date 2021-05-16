@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--this tag is an attribute to identify the website's language -  this helps search engines to return specific language results. In this case I have used "en" as in "English". I would like Google, for example, to show this website to mainly english speakers-->
+<html lang="en">
+
+<head>
+
+<!--this tag refers to the character encoding - how a browser will display the web page correctly-->
+<meta charset="UTF-8">
+
+<!-- load css file -->
+<link href="main.css" rel="stylesheet" type="text/css">
+
+<!-- load Font -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<!-- Load icon library for the search button in breadcrumb -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- load SlickNav -->
+<link rel="stylesheet" href="styles/slicknav.css">
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js">
+</script>
+
+<script src="js/jquery.slicknav.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+});
+</script>
+
+<!-- load Slideshow JavaScript -->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="slide_show.js"></script>
+
+<title>Gulden's Blog</title>
+
+<!-- SEO - search engine optimization -->
+<meta name="description" content="A student blog about University and mostly book reviews">
+<meta name="keywords" content="gulden,
+student, blog, bookreviews, reflectivepages">
+
+</head>
+
+
+<body>
+
+<!--The header of the website - this may contain a logo, a title (usually larger than normal text, to draw attention) or both-->
+<header>
+	<h1>Gulden's Blog</h1>
+</header>
+
+
+<!--This is the Navigation Bar on top of my website, after the Title-->
+
+<div class="navbar">
+	<nav id="mobilemenu"></nav>
+		<a href="index.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Reflective Pages<em class="fa fa-caret-down"></em></button>
+					<div class="dropdown-content">
+						<a href="module1.html">Module 1</a>
+				<a href="module2.html">Module 2</a>
+				<a href="module3.html">Module 3</a>
+				<a href="module4.html">Module 4</a>
+				<a href="module5.html">Module 5</a>
+				<a href="module6.html">Module 6</a>
+					</div>
+			</div>
+
+		<a href="bookReviews.html">Book Reviews</a>
+		<a href="aboutMe.html">About Me</a>
+		<a href="Contact.html">Contact</a>
+</div>
+
+
+	<ul class="breadcrumb">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="bookreviews.html">Book Reviews</a></li>
+			<li>Road to Nowhere - Christopher Pike</li>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search..." name="search">
+							<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+	</ul>
+
+
+<!--The main content of the website, included in "section". Titles of "posts" will appear here, redirecting to a new tab on the browser-->
+<section>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>ROAD TO NOWHERE - CHRISTOPHER PIKE</h2>
+					<h5><a href="bookReviews.html">Book Reviews </a> ;   23th of June, 2019</h5>
+						<img src="images/road-to-nowhere.jpg" alt="Avatar">
+							<p>I used to devour Christopher Pike's books as a young teen and recently, I treated myself to a few of his books to see if they'd managed to stand the test of time... with this being one that I remembered as being particularly good. 
+
+							I enjoyed it every bit as much as I did back in the day. I started it this morning, then voila, before I knew it, I'd finished it only a few hours later. It made for an addictive read!
+
+							It's about Theresa, a teen girl on the run from her no-good cheating boyfriend and her best friend. She picks up two hitchhikers; Freedom Jack, a magician with a wicked outlook on life, and Poppy Corn, a miserable girl who spends most of the journey chain-smoking in the back. To keep themselves amused, they take turns to tell stories. Theresa tells the story of her own sad, failed love affair, and Free and Poppy tell her about friends of theirs, John and Candy. 
+
+							As the trip goes on, things get weirder. They stop off to see Free's mum, who happens to live in a horror story castle and is a fortune teller. Likewise, Poppy's dad is a priest. As the road goes on, it becomes apparent that this isn't your normal road trip, and that things are going to end badly unless there's a bit of divine intervention at some point...
+
+							As with all Pike's fab teen books, this was a compulsive read. He has an uncanny knack of pulling you right in - I personally think this is his greatest skill. Sure, it's a little over-dramatic in places; but hey, this is for a teen audience, and back then I lapped this sort of thing up. The ending was far more religious than I remembered, but it didn't cause me any particular problems. After all, it's a book that deals with some fairly weighty emotions, so it doesn't seem unreasonable that religion might sneak in there somewhere. 
+
+							A very enjoyable trip down memory lane, and one that I'd recommend to teenagers now (or perhaps people like me who liked them the first time around!). </p>
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+<!--Side section of my the website - a little box showing a short explanation about me and a Slideshow-->
+<aside>
+	<p>	
+		<br>
+			<img src="images/gulden1.png" alt="Avatar">
+	</p>
+		<h2><i>About Me</i></h2>
+			<p>I am Gulden, 25 years old. Currently a student at University of West London on Saturdays and during the week I am a nanny to a 8 year old boy. 
+This is my personal space: I will talk about my University days, modules, assessments and also discuss about one of my biggest passions: reading books. Not every book, though. I am a hardcore fan of Christopher Pike, a bestselling author of young adult fiction/horror books.<br> I also like pink things, traveling, drawing, video-games, movies and TV Shows!
+			</p>
+		
+	<h2>Best of Pike Book Covers</h2>
+		<h1 id="caption">The Starlight Crystal</h1>
+			<img id="slide" src="images/thestarlightCrystal.jpg" alt="The Starlight Crystal">
+				<div id="slides"> 
+					<img src="images/thestarlightCrystal.jpg" alt="The Starlight Crystal">
+					<img src="images/execofInnocence.jpg" alt="Execution of Innocence">
+					<img src="images/magicFire.jpg" alt="Magic Fire">
+					<img src="images/rememberMe.jpg" alt="Remember Me">
+				</div>
+		
+</aside>
+
+
+<!--This is the footer, containing name, surname, student number and University name of the student attending the module-->
+<footer>
+	
+	<div class="floatleft">
+		<p>
+			<img src="images/cat.gif" alt="Cat">
+				<br>
+					&copy; 2019, Gulden Belli
+		</p>
+	</div>
+
+</footer>
+
+
+</body>
+
+</html>

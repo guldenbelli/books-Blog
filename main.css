@@ -1,0 +1,403 @@
+body {
+  font-family: 'Montserrat';
+  font-size: 100%;
+  background-color: #ffffff;
+  color: #313b48;
+}
+
+section,
+aside,
+h1,
+h2,
+h3
+{
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  white-space: pre-line;
+}
+
+section
+ {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:link {
+  color: #f08080;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f4a6a6;
+}
+
+a:hover {
+  color: #313b48;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 95%;
+  padding-bottom: .5em;
+}
+
+em {
+  font-weight: bold;
+}
+
+/* the styles for the header of the website */
+header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  background-repeat: no-repeat;
+  background-position: center; 
+  font-size: 25px;
+  
+}
+
+header h1 {
+  font-size: 200%;
+  color: #f18c8c;
+  margin-left: 12px;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* the styles for the Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #fce5e5;
+  font-family: Arial;
+  display : flex;
+  justify-content: center;
+  margin-right: -8px;
+  margin-left: -8px;
+  
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #313b48;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 125%;
+  border: none;
+  outline: none;
+  color: #313b48;
+  font-weight: bold;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a light pink background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #eeaa7b;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 6%;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a light pink background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ffeaee;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* hide the mobile menu */
+#mobilemenu { display: none; }
+.
+.
+/* display the mobile menu */
+#mobilemenu { display: block; }
+
+
+/* Style the Breadcrumb list */
+ul.breadcrumb {
+  
+  padding: 1%;
+  margin-left: 9%;
+  list-style: none;
+}
+
+/* Display list items side by side - breadcrumb */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 100%;
+}
+
+/* Add a slash symbol (/) before/behind each list item - breadcrumb */
+ul.breadcrumb li+li:before {
+  padding: 1%;
+  color: black;
+  content: ">\00a0";
+}
+
+/* Add a color to all links inside the list - breadcrumb */
+ul.breadcrumb li a {
+  color: #d87373;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over - breadcrumb */
+ul.breadcrumb li a:hover {
+  color: #313b48;
+  text-decoration: underline;
+}
+
+/* Style the search box inside the Breadcrumb bar*/
+
+
+.breadcrumb .search-container {
+  
+  float: right;
+  margin-right: 16%;
+  margin-top: -1%;
+}
+
+.breadcrumb input[type=text] {
+  
+  margin-top: 10px;
+  margin-right: 6px;
+  font-size: 17px;
+  border: solid 1px;
+  border-color: #F2EAE8;
+}
+
+.breadcrumb .search-container button {
+  float: right;
+  padding: 1px 4px;
+  margin-top: 10px;
+  margin-right: 6px;
+  background: #F2EAE8;
+  font-size: 17px;
+  border: solid 1px;
+  border-color: #F2EAE8;
+  cursor: pointer;
+}
+
+.breadcrumb .search-container button:hover {
+  background: #ccc;
+}
+
+/* the styles for the section in the Main (blog posts)*/
+section {
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 7%;
+  float: left;
+}
+
+section h1 {
+  font-size: 150%;
+  margin-bottom: 5%;
+  color: #d87373;
+}
+
+
+section h2 {
+  font-size: 200%;
+  margin-bottom: 5%;
+  color: #d87373;
+}
+
+/* Add a card effect for blog posts in "section" */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border: solid 1px;
+  border-color: #F2EAE8;
+}
+
+/* Style the "contact" form inside "section", in contact.html */
+section input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+  background-color: #d87373;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* the styles for the aside - sidebar */
+aside {
+  width: 20%;
+  float: right;
+  padding: 2%;
+  background-color: #ffffff;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+
+aside h1 {
+  font-size: 130%;
+  padding-bottom: 5%;
+  margin-left: -0px;
+  color: #d87373;
+}
+
+.aside h1:hover {
+  color: #313b48;
+}
+aside h2 {
+  font-size: 150%;
+  padding-bottom: 5%;
+  margin-left: -0px;
+  color: #d87373;
+}
+
+aside h3 {
+  font-size: 100%;
+  padding-bottom: 5%;
+  color: #d65d66;
+  margin-left: 0%;
+  font-style: normal
+}
+
+aside p {
+  margin-bottom: 5%;
+}
+
+/* Style the slideshow in "aside" */
+#slides img {
+	height: 400px;
+	display: none;
+}
+
+/* the styles for the grid in Book Reviews */
+.center {
+  display: block;
+  margin-left: -10%;
+  margin-right: auto;
+  width: 120%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+  align-items: start;
+  }
+
+.grid > article {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+
+.grid > article:hover {
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.text {
+  padding: 0 10px;
+}
+
+
+/* the styles for the footer */
+footer {
+  clear: both;
+  background-color: #313b48;
+  margin-right: -8px;
+  margin-left: -8px;
+  padding-top: 12px;
+}
+
+footer p {
+  font-size: 100%;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+
+/* media queries */
+#mobilemenu { display: none;}
+/* tablet or desktop portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+ #nav_menu ul li a {
+font-size: .875em;
+ }
+}
+/* mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px) {
+ #nav_menu { display: none;}
+ #mobilemenu {display: block;}
+}
